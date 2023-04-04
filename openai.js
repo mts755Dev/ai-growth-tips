@@ -15,7 +15,6 @@ export const generateTips = async (merchantData) => {
       max_tokens: 512,
       top_p: 1,
       presence_penalty: 0,
-
       frequency_penalty: 0,
     });
     const tips = response.data.choices[0].text.trim().split('\n');
